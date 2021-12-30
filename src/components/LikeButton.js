@@ -49,7 +49,7 @@ export default function LikeButton(props) {
     return (
 
         <>
-        <button type="button" className={`btn ${liked?"btn-primary":"btn-light"} position-relative mx-3`} onClick={onClick}>
+        <button type="button" className={`btn ${liked?"btn-primary":"btn-light"} position-relative mx-3`} onClick={onClick} disabled={user?false:true}>
 
             <i className={`bi bi-heart${liked?"":"-fill"}`}></i>
 

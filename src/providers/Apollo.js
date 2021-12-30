@@ -24,6 +24,7 @@ const authLink = setContext(()=>{
 
 
 const httpLink = createHttpLink({
+    // uri: "http://localhost:5000",
     uri: "https://high-world-server.herokuapp.com/",
 });
 
